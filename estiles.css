@@ -1,0 +1,681 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --color-claro1: rgb(250, 249, 223);
+    --color-rojo: rgb(220, 37, 4);
+}
+#papa-wrapper{
+    width: 4550px;
+   min-height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin:top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+#son-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 600vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin:top left;
+}
+#fold{
+    min-width: 320px;
+    max-width: 750px;
+    height: 100vh;  
+    background: var(--color-claro1);   
+    display: grid;
+    grid-template-columns: 1fr 0.75fr 0.75fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1.5fr 0.5fr;
+    grid-gap: 5px;
+}
+.seccion{
+    min-width:700px;
+    max-width: 900px;
+    height: 100vh;
+    
+}
+h3{
+    font-family: 'Trocchi', serif;
+}
+h4{
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+/*///////////\\\\\\\\\\\\*/
+
+#fold h1{
+    grid-area:2/2/5/3;
+    writing-mode: vertical-rl;
+    justify-self: end;
+    color: var(--color-rojo);
+    font-family: 'Gravitas One', cursive;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0,0.5);
+}
+#f1{
+    grid-area:1/1/2/3;
+    align-self: end;
+    text-align: right;
+    font-family: 'Gravitas One', cursive;
+    font-size: 20px;
+}
+#f2{
+    grid-area:4/3/5/5;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 35px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+#fold ul{
+    grid-area:4/1/5/2;
+    list-style: none;
+    
+}
+#fold li{
+    border-bottom:3px solid rgba(220, 37, 4, 0.5);
+    text-align: right;
+    opacity: 0.6;
+    font-family: 'Nunito', sans-serif;
+}
+#fold li:hover{
+    color: blue;
+    opacity: 1;
+}
+
+#red-box{
+    background: var(--color-rojo);
+    grid-area: 5/2/6/5;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 0 0 0;
+    z-index: 1;
+}
+#red2{
+    background: url(LUISDA/crossword.png);
+    grid-area: 5/2/6/5;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.redes{
+    grid-area:4/3/5/5;
+    width: 30px;
+    height: 30px;
+    align-self: end;
+    justify-self: start;
+    border-radius: 5px;
+    
+}
+.redes:hover{
+    background: blue;
+    color: white;
+}
+#facebook img{
+    width: 30px;
+    height: 30px;
+}
+#instagram {
+    margin-left: 30px;
+}
+#instagram img{    
+    width: 30px;
+    height: 30px;   
+}
+#whatapp{
+    margin-left: 60px;    
+}
+#whatapp img{
+    width: 30px;
+    height: 30px; 
+    
+}
+
+/*//////// ----- ONE ----\\\\\\\\*/
+
+.one{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*********************/
+.one{
+    border-right: 3px solid rgb(220, 37, 4);
+}
+.a1{
+    background:#dddede;
+    display: grid;
+    grid-template-columns:0.5fr 1fr 1fr 0.3fr 1fr 1fr 0.5fr;
+}
+#img1{
+    background: url(LUISDA/pa1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 98%;
+    margin:4px 0px;   
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    grid-area: 1/2/2/3;
+}
+.a1 h3{
+    grid-area: 1/3/2/6;
+    align-self: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.a1 h4{
+    grid-area: 1/1/2/2;
+    writing-mode: vertical-rl;
+    margin-top: 5px;
+    justify-self: end;
+    
+}
+/***************************/
+.a2{
+    background: #232122;
+    display: grid;
+    grid-template-columns:0.5fr 1fr 1fr 0.3fr 1fr 1fr 0.5fr;
+    color: white;
+}
+#img2{
+    background: url(LUISDA/pa2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: right;
+    width: 100%;
+    height: 97%;
+    margin:4px 0px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    grid-area: 1/5/2/7;
+}
+.a2 h3{
+    grid-area: 1/2/2/4;
+    align-self: center;
+    justify-self: end;
+    margin-top: 10px;
+}
+
+.a2 h4{
+    grid-area: 1/7/2/8;    
+    writing-mode: vertical-rl;
+    margin-top: 5px;
+    justify-self: start;
+}
+
+/*********************/
+.a3{
+    background:#a5c05b;
+    display: grid;
+    grid-template-columns:0.5fr 1fr 1fr 0.3fr 1fr 1fr 0.5fr;
+}
+#img3{
+    background: url(LUISDA/pa3.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:97%;
+    margin:4px 0px;  
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    grid-area: 1/2/2/4;
+}
+.a3 h3{
+    grid-area: 1/5/2/7;
+    align-self: center;    
+    margin-top: 10px;
+}
+
+.a3 h4{
+    grid-area: 1/1/2/2;
+    writing-mode: vertical-rl;
+    margin-top: 5px;
+    justify-self: end;
+}
+.paints{
+    height: 33.3%;
+    
+}
+.paints img{
+    width: 40%;
+    height: auto;
+
+}
+/*///////////  DOS    /////////////*/
+.two{
+    border-right: 3px solid rgb(220, 37, 4);
+}
+
+.a4{
+    background:#0f1f38;
+    display: grid;
+    grid-template-columns:0.5fr 1fr 1fr 0.3fr 1fr 1fr 0.5fr;
+    grid-template-rows:0.5fr 1fr 1fr 0.3fr 1fr 1fr 0.5fr;
+    color: white;
+    
+}
+.a4 h3{
+    grid-area:3/2/4/4 ;
+    justify-self: center;
+    color:white;
+}
+.a4 h4{
+    grid-area:3/7/7/8;
+    writing-mode: vertical-rl;
+    margin-top: 5px;
+    justify-self: start;
+}
+
+.a5{
+    background:#837970;
+    display: grid;
+    grid-template-columns:0.5fr 0.5fr 1.5fr 0.3fr 1fr 1fr 0.5fr;
+    grid-template-rows:0.5fr 1fr 1fr 0.3fr 1fr 1fr 0.5fr;
+}
+.a5 h3{
+    grid-area:2/5/3/6;
+}
+.a5 h4{
+    grid-area: 2/2/7/3;
+    writing-mode: vertical-rl;
+    margin-top: 5px;
+    justify-self: end;
+}
+
+
+.paints2{
+    height: 50%;
+    
+}
+.paints2 img{
+    width: 40%;
+    height: auto;
+
+}
+
+#img4{
+    background: url(LUISDA/pa4.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:100%;
+   
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    grid-area: 3/5/7/7;
+}
+
+
+#img5{
+    background: url(LUISDA/pa5.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: right;
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    grid-area: 2/3/7/4;
+}
+
+
+
+
+
+
+/*///////   TRES /////////*/
+
+.three{
+    background:#1b4b5a;
+    color: white;
+    display: grid;
+    grid-template-columns:0.5fr 1fr 1fr 0.3fr 1fr 1fr 0.5fr;
+    grid-template-rows:0.5fr 1fr 1fr 0.3fr 1fr 1fr 0.5fr;
+}
+.a6{
+    background: url(LUISDA/pb2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 100%;
+    grid-area:2/3/6/6;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0,0.5);
+}
+.three h3{
+    grid-area:6/3/7/6;
+    justify-self: center;
+    align-self: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0,0.5);
+}
+.three h4{
+    grid-area:2/6/6/7;
+    writing-mode: sideways-lr;
+    
+
+}
+#sred-box4{
+    background: var(--color-rojo);
+    grid-area: 2/1/3/2;
+    width: 40%;
+    height: 100%;
+    border-radius:0 8px 8px 0 ;
+    z-index: 1;
+}
+#sred4{
+    background: url(LUISDA/crossword.png);
+    grid-area: 2/1/3/2;
+    width: 40%;
+    height: 100%;
+    border-radius:0 8px 8px 0 ;
+    z-index: 2;
+}
+
+#sred-box5{
+    background: var(--color-rojo);
+    grid-area: 7/3/8/7;
+    width: 100%;
+    height: 100%;
+    border-radius:8px 8px 0 0;
+    z-index: 1;
+}
+#sred5{
+    background: url(LUISDA/crossword.png);
+    grid-area:  7/3/8/7;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+    z-index: 2;
+}
+
+
+/*////////  FOUR //////////*/
+.four{
+    background: #2a3132;
+    color: yellow;
+    font-family: 'Nunito', sans-serif;
+    line-height: 16px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 1fr 0.5fr 1fr 1fr 1fr 0.5fr;
+}
+.four img{
+    grid-area: 2/5/6/7;
+    width: 95%;
+    height: 95%;
+    margin: 5px 5px 5px 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0,0.5);
+}
+#t_sinop{
+    grid-area: 2/2/3/4;
+    align-self: start;
+    justify-self: center;
+    font-family: 'Gravitas One', cursive;
+}
+#sp1{
+    grid-area: 3/2/5/5;
+}
+#sp2{
+    grid-area: 6/3/8/7;
+}
+#sp3{
+    grid-area: 8/4/10/7;
+}
+#sred-box{
+    background: var(--color-rojo);
+    grid-area: 6/1/11/2;
+    width: 100%;
+    height: 100%;
+    border-radius:0 8px 0 0;
+    z-index: 1;
+}
+#sred2{
+    background: url(LUISDA/crossword.png);
+    grid-area: 6/1/11/2;
+    width: 100%;
+    height: 100%;
+    border-radius:0 8px 0 0;
+    z-index: 2;
+}
+
+
+
+
+/*/////// FIVE  /////////////*/
+
+.five{
+    display: flex;   
+    border-right: 3px solid rgb(250, 249, 223);
+}
+.a7{
+    width: 33.33%;
+    height: 100%;
+    background: #92aac7;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 0.3fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr;
+}
+#img7{
+    background: url(LUISDA/pb1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: right;
+    width: 100%;
+    height: 97%;
+    margin:4px 0px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    grid-area: 2/2/7/7;
+}
+.a7 h3{
+    grid-area: 9/2/10/7;
+}
+.a7 h4{
+    grid-area:7/2/8/7 ;
+}
+
+
+/**********************/
+
+.a8{
+    width: 33.33%;
+    height: 100%;
+    background: #a1be95;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 0.3fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr;
+}
+#img8{
+    background: url(LUISDA/pb4.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: right;
+    width: 100%;
+    height: 97%;
+    margin:4px 0px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    grid-area: 3/2/9/7;
+}
+.a8 h3{
+    grid-area: 10/2/11/7;
+    align-self: center;
+}
+.a8 h4{
+    grid-area:9/2/10/7 ;
+}
+/************************/
+.a9{
+    width: 33.33%;
+    height: 100%;
+    background: #ed5752;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 0.3fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 0.5fr;
+}
+
+#img9{
+    background: url(LUISDA/pb3.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: right;
+    width: 100%;
+    height: 97%;
+    margin:4px 0px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    grid-area: 4/2/10/7;
+}
+.a9 h3{
+    grid-area: 12/2/13/7;
+}
+.a9 h4{
+    grid-area:10/2/11/7 ;
+}
+/*///////// SIX ///////////*/
+
+.six{
+    display: flex;   
+    flex-direction: column;
+    color: white;
+    border-left: 2px solid #e8a735;
+    border-right: 3px solid #e8a735;
+
+}
+.a10{
+    width: 100%;
+    height: 33.33%;
+    background: #04202c;
+    display: grid;
+    grid-template-columns: 0.2fr 0.5fr 1fr 0.5fr 1fr 0.5fr 0.3fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+}
+#img10{
+    background: url(LUISDA/pc3.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: right;
+    width: 100%;
+    height: 97%;
+    margin:4px 0px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    grid-area: 2/4/10/7;
+}
+.a10 h3{
+    grid-area: 3/8/14/10;
+}
+.a10 h4{
+    grid-area:2/3/10/4 ;
+    writing-mode: vertical-rl;
+}
+
+
+/**********************/
+
+.a11{
+    width: 100%;
+    height: 33.33%;
+    background: #304040;
+    display: grid;       
+    grid-template-columns:  0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 0.5fr 0.3fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+}
+#img11{
+    background: url(LUISDA/pc2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: right;
+    width: 100%;
+    height: 97%;
+    margin:4px 0px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    grid-area: 2/3/10/6;
+}
+.a11 h3{
+    grid-area: 3/7/14/9;
+
+}
+.a11 h4{
+    grid-area:2/2/10/3 ;
+    writing-mode: vertical-rl;
+}
+
+
+/************************/
+.a12{
+    width: 100%;
+    height: 33.33%;
+    background: #5b7065;
+    display: grid;
+    grid-template-columns: 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 0.5fr 0.3fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+}
+
+#img12{
+    background: url(LUISDA/pc1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: right;
+    width: 100%;
+    height: 97%;
+    margin:4px 0px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    grid-area: 2/2/10/5;
+}
+.a12 h3{
+    grid-area: 3/6/14/8;
+}
+.a12 h4{
+    grid-area:2/1/10/2 ;
+    writing-mode: vertical-rl; ;
+}
+/*///////   SEVEN //////////*/
+.seven{
+    width: 700px;
+    height: 100vh;
+    background: var(--color-rojo);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+#sign{
+    font-family: 'Rock Salt', cursive;
+    grid-area: 3/2/5/5;
+    font-size: 60px;
+    -webkit-transform: rotate(-7deg); 
+    -moz-transform: rotate(-7deg); 
+    -ms-transform: rotate(-7deg); 
+    -o-transform: rotate(-7deg); 
+    transform: rotate(-7deg)
+}
+#creditos{
+  grid-area: 4/5/7/7;    
+  writing-mode: sideways-lr;
+  justify-self: end;
+  align-self: end;
+}
+
+/*///////// QUERYS //////////////*/
+
+@media(min-height: 460px){
+    .a6{
+         width: 90%;
+    }
+}@media(min-height: 570px){
+    .a6{
+        width: 100%;
+   }
+
+}@media(min-width: 768px){
+
+}@media(min-width: 992px){
+
+}@media(min-width: 1200px){

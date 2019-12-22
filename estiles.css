@@ -716,7 +716,7 @@ h4{
   justify-self: end;
   align-self: end;
 }
-
+/*
 /*///////// QUERYS //////////////*/
 
 @media(min-height: 460px){
@@ -733,4 +733,4 @@ h4{
 }@media(min-width: 992px){
 
 }@media(min-width: 1200px){
-}
+}*/

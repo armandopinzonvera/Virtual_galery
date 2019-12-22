@@ -10,8 +10,10 @@
 #papa-wrapper{
     width: 4550px;
    min-height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin:top left;
+    -webkit-transform: rotate(-90deg) translateX(-100vh);
+            transform: rotate(-90deg) translateX(-100vh);
+    -webkit-transform-origin:top left;
+            transform-origin:top left;
     overflow-y: scroll;
     overflow-x: hidden;
     position: absolute;
@@ -23,11 +25,18 @@
 }
 
 #son-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 600vw;
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin:top left;
+    -webkit-transform: rotate(90deg) translateY(-100vh);
+            transform: rotate(90deg) translateY(-100vh);
+    -webkit-transform-origin:top left;
+            transform-origin:top left;
 }
 #fold{
     min-width: 320px;
@@ -58,7 +67,9 @@ h4{
 
 #fold h1{
     grid-area:2/2/5/3;
-    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
     justify-self: end;
     color: var(--color-rojo);
     font-family: 'Gravitas One', cursive;
@@ -147,8 +158,13 @@ h4{
 /*//////// ----- ONE ----\\\\\\\\*/
 
 .one{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 
@@ -168,7 +184,8 @@ h4{
     width: 100%;
     height: 98%;
     margin:4px 0px;   
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);   
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     grid-area: 1/2/2/3;
 }
 .a1 h3{
@@ -180,7 +197,9 @@ h4{
 
 .a1 h4{
     grid-area: 1/1/2/2;
-    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
     margin-top: 5px;
     justify-self: end;
     
@@ -200,7 +219,8 @@ h4{
     width: 100%;
     height: 97%;
     margin:4px 0px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     grid-area: 1/5/2/7;
 }
 .a2 h3{
@@ -212,7 +232,9 @@ h4{
 
 .a2 h4{
     grid-area: 1/7/2/8;    
-    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;    
+        -ms-writing-mode: tb-rl;    
+            writing-mode: vertical-rl;
     margin-top: 5px;
     justify-self: start;
 }
@@ -230,7 +252,8 @@ h4{
     width: 100%;
     height:97%;
     margin:4px 0px;  
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);  
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     grid-area: 1/2/2/4;
 }
 .a3 h3{
@@ -241,7 +264,9 @@ h4{
 
 .a3 h4{
     grid-area: 1/1/2/2;
-    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
     margin-top: 5px;
     justify-self: end;
 }
@@ -274,7 +299,9 @@ h4{
 }
 .a4 h4{
     grid-area:3/7/7/8;
-    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
     margin-top: 5px;
     justify-self: start;
 }
@@ -290,7 +317,9 @@ h4{
 }
 .a5 h4{
     grid-area: 2/2/7/3;
-    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
     margin-top: 5px;
     justify-self: end;
 }
@@ -313,7 +342,9 @@ h4{
     width: 100%;
     height:100%;
    
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+   
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     grid-area: 3/5/7/7;
 }
 
@@ -325,7 +356,8 @@ h4{
     float: right;
     width: 100%;
     height: 100%;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     grid-area: 2/3/7/4;
 }
 
@@ -350,7 +382,8 @@ h4{
     width: 80%;
     height: 100%;
     grid-area:2/3/6/6;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0,0.5);
+            box-shadow: 4px 4px 4px rgba(0, 0, 0,0.5);
 }
 .three h3{
     grid-area:6/3/7/6;
@@ -360,7 +393,9 @@ h4{
 }
 .three h4{
     grid-area:2/6/6/7;
-    writing-mode: sideways-lr;
+    -webkit-writing-mode: sideways-lr;
+        -ms-writing-mode: sideways-lr;
+            writing-mode: sideways-lr;
     
 
 }
@@ -414,7 +449,8 @@ h4{
     width: 95%;
     height: 95%;
     margin: 5px 5px 5px 5px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0,0.5);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0,0.5);
 }
 #t_sinop{
     grid-area: 2/2/3/4;
@@ -454,6 +490,8 @@ h4{
 /*/////// FIVE  /////////////*/
 
 .five{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;   
     border-right: 3px solid rgb(250, 249, 223);
 }
@@ -473,7 +511,8 @@ h4{
     width: 100%;
     height: 97%;
     margin:4px 0px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     grid-area: 2/2/7/7;
 }
 .a7 h3{
@@ -502,7 +541,8 @@ h4{
     width: 100%;
     height: 97%;
     margin:4px 0px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     grid-area: 3/2/9/7;
 }
 .a8 h3{
@@ -530,7 +570,8 @@ h4{
     width: 100%;
     height: 97%;
     margin:4px 0px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     grid-area: 4/2/10/7;
 }
 .a9 h3{
@@ -542,8 +583,13 @@ h4{
 /*///////// SIX ///////////*/
 
 .six{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;   
-    flex-direction: column;
+    -webkit-box-orient: vertical;   
+    -webkit-box-direction: normal;   
+        -ms-flex-direction: column;   
+            flex-direction: column;
     color: white;
     border-left: 2px solid #e8a735;
     border-right: 3px solid #e8a735;
@@ -565,7 +611,8 @@ h4{
     width: 100%;
     height: 97%;
     margin:4px 0px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     grid-area: 2/4/10/7;
 }
 .a10 h3{
@@ -573,7 +620,9 @@ h4{
 }
 .a10 h4{
     grid-area:2/3/10/4 ;
-    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
 }
 
 
@@ -595,7 +644,8 @@ h4{
     width: 100%;
     height: 97%;
     margin:4px 0px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     grid-area: 2/3/10/6;
 }
 .a11 h3{
@@ -604,7 +654,9 @@ h4{
 }
 .a11 h4{
     grid-area:2/2/10/3 ;
-    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
 }
 
 
@@ -626,7 +678,8 @@ h4{
     width: 100%;
     height: 97%;
     margin:4px 0px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     grid-area: 2/2/10/5;
 }
 .a12 h3{
@@ -634,7 +687,9 @@ h4{
 }
 .a12 h4{
     grid-area:2/1/10/2 ;
-    writing-mode: vertical-rl; ;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl; ;
 }
 /*///////   SEVEN //////////*/
 .seven{
@@ -651,14 +706,13 @@ h4{
     grid-area: 3/2/5/5;
     font-size: 60px;
     -webkit-transform: rotate(-7deg); 
-    -moz-transform: rotate(-7deg); 
-    -ms-transform: rotate(-7deg); 
-    -o-transform: rotate(-7deg); 
     transform: rotate(-7deg)
 }
 #creditos{
   grid-area: 4/5/7/7;    
-  writing-mode: sideways-lr;
+  -webkit-writing-mode: sideways-lr;    
+      -ms-writing-mode: sideways-lr;    
+          writing-mode: sideways-lr;
   justify-self: end;
   align-self: end;
 }
@@ -679,3 +733,4 @@ h4{
 }@media(min-width: 992px){
 
 }@media(min-width: 1200px){
+}

@@ -103,10 +103,17 @@ h4{
     opacity: 0.6;
     font-family: 'Nunito', sans-serif;
 }
-#fold li:hover{
+/*#fold li:hover{
     color: blue;
     opacity: 1;
+}*/
+
+a{
+    text-decoration: none;    
+    color: black;
 }
+
+
 
 #red-box{
     background: var(--color-rojo);
